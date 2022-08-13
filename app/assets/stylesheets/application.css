@@ -18,8 +18,26 @@
     box-sizing: border-box;
 }
 
+/* bootstrap hack=========================================================================================== */
+
+.container {
+    margin-top: 7rem;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: unset !important;
+    }
+}
+
+/* bootstrap hack=========================================================================================== */
+
 p {
     margin-bottom: unset;
+}
+
+a {
+    cursor: pointer;
 }
 
 header nav {
@@ -32,11 +50,6 @@ nav img {
 
 nav .navbar-brand {
     font-size: smaller;
-}
-
-body .bd {
-    border: 1px solid;
-    height: 500px;
 }
 
 .top {
@@ -57,6 +70,7 @@ body .bd {
     background-color: whitesmoke;
     position: fixed;
     z-index: 10000;
+    top: 0;
 }
 
 #start .tes {
@@ -65,12 +79,13 @@ body .bd {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
+    /* background: linear-gradient(45deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url(http://127.0.0.1:3000/user_images/merahputih.webp); */
     background: linear-gradient(45deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url(https://heroes-77.herokuapp.com/user_images/merahputih.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     box-shadow: 0 0 10px 2px rgb(0 0 0 / 50%);
-    animation: fadeup 5s ease;
+    animation: fadeup 3s ease;
 }
 
 #start h3 {
@@ -85,6 +100,14 @@ body .bd {
 
 #start .quotes {
     color: white;
+}
+
+#start-close {
+    transition: 1s ease;
+}
+
+#start-close:hover {
+    transform: rotate3d(1, 1, 1, 360deg);
 }
 
 

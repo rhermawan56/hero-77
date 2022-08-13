@@ -1,1 +1,36 @@
-<h1>Home</h1>
+<div class="container">
+    <h3 id="home">Kartu Pahlawan Republik Indonesia</h3>
+    <hr>
+    <div class="d-flex p-3 flex-wrap in-container">
+        <% for i in 0..5 do %>
+        
+        <div class="hero-card p-3 mx-2 my-2 shadow">
+            <center>
+                <%# <img class="hero-img" src="http://127.0.0.1:3000/user_images/soekarno.png" alt="hero-image"> %>
+                <img class="hero-img" src="https://heroes-77.herokuapp.com/user_images/soekarno.png" alt="hero-image">
+                <h5 class="mt-2 mb-0">Ir.Soekarno</h5>
+                <p class="m-0">06 - 06 -1901</p>
+            </center>
+            <hr>
+            <p class="content m-0" hidden>
+                Soekarno berhasil merumuskan Pancasila yang kemudian menjadi dasar (ideologi) Negara Kesatuan Republik
+                Indonesia. Soekarno juga berusaha enghimpun bangsa-bangsa di Asia, Afrika, dan Amerika Latin dengan
+                Konferensi Asia Afrika di Bandung pada 1955.
+            </p>
+            <div class="f-index"></div>
+        </div>
+
+        <% end %>
+
+    </div>
+</div>
+
+<div id="show" style="display: none">
+    <h3 id="close-show">x</h3>
+    <div class="show p-2">
+        <img id="image" src="" alt="">
+        <center>
+        <h6 id="content" class="m-3" style="color:white"></h6>
+        </center>
+    </div>
+</div>
