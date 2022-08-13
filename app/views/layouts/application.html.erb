@@ -8,10 +8,56 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-    
+
+    <%# bootstrap style %>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">    
   </head>
   <body>
+    <div id="start">
+        <h3 class="absolute start-close">x</h3>
+        <div class="absolute tes text-center">
+            <img src="<%="user_images/soekarno.png"%>" alt="">
+            <div class="quotes">
+                <h3 class="mt-2">Bangsa yang besar adalah bangsa yang menghargai jasa pahlawannya</h3>
+                <h6>~ Ir. Soekarno ~</h6>
+            </div>
+        </div>
+    </div>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light fixed-top p-3 shadow">
+        <div class="container-fluid">
+          <div class="d-flex my-logo align-items-center">
+              <img src="<%="user_images/logo-nav.png"%>" alt="logo">
+              <a class="navbar-brand p-0 mx-2" href="">
+                  <h6>Pulih Lebih Cepat<br>Bangkit Lebih Kuat</h6>
+              </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     
     <%= yield %>
+
+    <%# jquery %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <%# bootstrap script %>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <%# my script %>
+    <script src="<%= "js/script.js" %>"></script>
   </body>
 </html>

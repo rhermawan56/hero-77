@@ -13,3 +13,89 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin-bottom: unset;
+}
+
+header nav {
+    background: linear-gradient(0deg, rgb(255 255 255 / 50%), rgb(255 0 0 / 50%));
+}
+
+nav img {
+    width: 3rem;
+}
+
+nav .navbar-brand {
+    font-size: smaller;
+}
+
+body .bd {
+    border: 1px solid;
+    height: 500px;
+}
+
+.top {
+    margin-top: 4rem;
+}
+
+.my-logo {
+    cursor: pointer;
+}
+
+.absolute {
+    position: absolute;
+}
+
+#start {
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    position: fixed;
+    z-index: 10000;
+}
+
+#start .tes {
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background: linear-gradient(45deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url(http://127.0.0.1:3000/user_images/merahputih.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 10px 2px rgb(0 0 0 / 50%);
+    animation: fadeup 5s ease;
+}
+
+#start h3 {
+    right: 3rem;
+    top: 1rem;
+    cursor: pointer;
+}
+
+#start img {
+    width: 8rem;
+}
+
+#start .quotes {
+    color: white;
+}
+
+
+@keyframes fadeup {
+    0% {
+        opacity: 0;
+        top: 100%;
+    }
+
+    100% {
+        opacity: 100%;
+        top: 50%;
+    }
+}
