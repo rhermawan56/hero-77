@@ -65,7 +65,7 @@ body .bd {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
-    background: linear-gradient(45deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url(http://127.0.0.1:3000/user_images/merahputih.webp);
+    background: linear-gradient(45deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url(https://heroes-77.herokuapp.com/user_images/merahputih.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
