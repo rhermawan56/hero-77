@@ -7,9 +7,6 @@ let heroIndex
 let target
 let imgTarget
 let contentTarget
-// $('.hero-card img').click(function (params) {
-//     console.log($(this).index())
-// })
 
 $(".f-index").hover(function () {
     heroIndex = $(".f-index").index(this)
@@ -38,8 +35,4 @@ $(".f-index").click(function () {
 
 $('#close-show').click(function () {
     $('#show').hide()
-})
-
-$(function () {
-
 })
