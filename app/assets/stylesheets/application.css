@@ -149,12 +149,12 @@ nav .navbar-brand {
 
 @font-face {
     font-family: 'josefinsans-bold';
-    src: url('http://127.0.0.1:3000/fonts/josefinsans-bold.woff');
+    src: url('https://heroes-77.herokuapp.com/fonts/josefinsans-bold.woff');
 }
 
 @font-face {
     font-family: 'josefinsans-regular';
-    src: url('http://127.0.0.1:3000/fonts/josefinsans-regular.woff');
+    src: url('https://heroes-77.herokuapp.com/fonts/josefinsans-regular.woff');
 }
 
 @keyframes fadeup {
