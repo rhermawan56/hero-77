@@ -1,0 +1,47 @@
+.trigger-mode {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    cursor: pointer;
+}
+
+.top {
+    /* border: 1px solid; */
+    width: 100%;
+    padding: 10px;
+}
+
+.top-left {
+    /* border: 1px solid; */
+    padding: 10px;
+}
+
+.top-left p {
+    width: 70%
+}
+
+.top-right {
+    /* border: 1px solid; */
+    padding: 10px;
+    width: 30%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.top-right .circle-img {
+    width: 8.5rem;
+    height: 8.5rem;
+    background-color: rgb(255, 255, 255);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.top-right img {
+    width: 8rem;
+    border-radius: 50%;
+}

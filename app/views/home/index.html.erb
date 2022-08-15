@@ -21,7 +21,14 @@
     <% end %>
     
     <hr>
-    <div class="d-flex p-3 justify-add flex-wrap in-container">
+
+    <% if @count > 5 %>
+        <% @class = "justify-6" %>
+    <% else %>
+        <% @class = "justify-5" %>
+    <% end %>
+
+    <div class="d-flex p-3 <%= @class %> flex-wrap in-container">
 
         <% @cards.each do | card | %>
 
