@@ -3,14 +3,14 @@ $('#start .start-close').click(function () {
     $(location).attr('href', '#home')
 })
 
-let heroIndex
-let target
-let imgTarget
-let contentTarget
+let heroIndex = null
+let target = null
+let imgTarget = null
+let contentTarget = null
 
 $(".f-index").hover(function () {
     heroIndex = $(".f-index").index(this)
-    
+
     const content = document.getElementsByClassName('content')[heroIndex]
     const img = document.getElementsByClassName('hero-img')[heroIndex]
     target = document.getElementsByClassName('hero-card')[heroIndex]
@@ -35,4 +35,40 @@ $(".f-index").click(function () {
 
 $('#close-show').click(function () {
     $('#show').hide()
+})
+ 
+let val_text
+let lent_text
+let notice
+
+$('#content_form').on('input', function () {
+
+    val_text = $(this).val()
+    lent_text = val_text.length
+
+})
+
+
+$('#content_form').keypress(function () {
+
+    if (lent_text >= 500) {
+        notice = "<p class='mb-0'>Sejarah singkat maximum 500 character</p>"
+        $('#notice_form').html(notice)
+        $('#notice_form').show()
+        setTimeout(function () {
+            $('#notice_form').hide()
+        }, 5000)
+        return false
+    } else {
+        return true
+    }
+
+});
+
+// $('#mode').click(function () {
+//     $('body').css('background-color','black')
+// })
+
+$(function () {
+    $('#start').show()
 })

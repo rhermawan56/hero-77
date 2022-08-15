@@ -14,16 +14,17 @@ body {
 
 .hero-card {
     position: relative;
-    border: 1px solid;
     min-width: 15rem;
     max-width: 15rem;
     flex: auto;
     border-radius: 10px;
     transition: .5s ease;
+    min-height: 18.75rem;
+    background-color: #a3a3a333;
 }
 
 .hero-card img {
-    width: 8rem;
+    max-width: 8rem;
 }
 
 .hero-card p {
@@ -33,6 +34,14 @@ body {
 .hover-class {
     transform: translateY(-20px);
     transition: ease .5s;
+}
+
+.hero-card .hero-text {
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #show {
@@ -45,7 +54,7 @@ body {
 }
 
 #show .show {
-    width: 50%;
+    width: 80%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -69,7 +78,7 @@ body {
 #image {
     margin-left: 50%;
     transform: translateX(-50%);
-    width: 12rem;
+    width: 8rem;
 }
 
 @keyframes show {

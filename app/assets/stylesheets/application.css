@@ -32,6 +32,30 @@
 
 /* bootstrap hack=========================================================================================== */
 
+/* define class ============================================================================================ */
+
+.josefinsansBold {
+    font-family: 'josefinsans-bold';
+}
+
+.josefinsans {
+    font-family: 'josefinsans-regular';
+}
+
+.m-relative {
+    position: relative;
+}
+
+.m-absolute {
+    position: absolute;
+}
+
+.justify-add {
+    justify-content: space-between;
+}
+
+/* define class ============================================================================================ */
+
 p {
     margin-bottom: unset;
 }
@@ -71,38 +95,27 @@ nav .navbar-brand {
     position: fixed;
     z-index: 10000;
     top: 0;
+    display: none;
 }
 
 #start .tes {
-    padding: 10px;
+    /* padding: 10px; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
-    /* background: linear-gradient(45deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url(http://127.0.0.1:3000/user_images/merahputih.webp); */
-    background: linear-gradient(45deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url(https://heroes-77.herokuapp.com/user_images/merahputih.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 0 10px 2px rgb(0 0 0 / 50%);
+    /* background: linear-gradient(45deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url(https://heroes-77.herokuapp.com/user_images/merahputih.webp); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* box-shadow: 0 0 10px 2px rgb(0 0 0 / 50%); */
     animation: fadeup 3s ease;
 }
 
-#start h3 {
+#start-close {
     right: 3rem;
     top: 1rem;
     cursor: pointer;
-}
-
-#start img {
-    width: 8rem;
-}
-
-#start .quotes {
-    color: white;
-}
-
-#start-close {
     transition: 1s ease;
 }
 
@@ -110,6 +123,39 @@ nav .navbar-brand {
     transform: rotate3d(1, 1, 1, 360deg);
 }
 
+#start img {
+    width: 20rem;
+}
+
+#start .quotes {
+    /* color: white; */
+}
+
+.quotes h3 {
+    text-shadow: 3px 1px 6px #00000096;
+}
+
+
+#notice,
+#notice_form {
+    padding: .5rem;
+    background-color: antiquewhite;
+    border-radius: .5rem;
+}
+
+#notice_form {
+    display: none;
+}
+
+@font-face {
+    font-family: 'josefinsans-bold';
+    src: url('http://127.0.0.1:3000/fonts/josefinsans-bold.woff');
+}
+
+@font-face {
+    font-family: 'josefinsans-regular';
+    src: url('http://127.0.0.1:3000/fonts/josefinsans-regular.woff');
+}
 
 @keyframes fadeup {
     0% {
@@ -120,5 +166,11 @@ nav .navbar-brand {
     100% {
         opacity: 100%;
         top: 50%;
+    }
+}
+
+@media (max-width: 567px) {
+    .justify-add {
+        justify-content: center !important;
     }
 }
