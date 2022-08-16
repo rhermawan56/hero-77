@@ -101,7 +101,7 @@ nav .navbar-brand {
     z-index: 10000;
     top: 0;
     display: none;
-    background: linear-gradient(45deg, rgb(237 236 236 / 50%), rgb(237 236 236 / 50%)), url('http://127.0.0.1:3000/user_images/capture.jpg');
+    background: linear-gradient(45deg, rgb(237 236 236 / 50%), rgb(237 236 236 / 50%)), url('https://heroes-77.herokuapp.com/user_images/capture.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
