@@ -9,7 +9,7 @@
     </div>
 </div>
 
-<div class="container m-relative">
+<div class="container m-relative m-container">
     <h3 class="josefinsansBold" id="home">Pahlawan Republik Indonesia</h3>
 
     <%# <div id="mode" class="m-absolute" style="cursor:pointer">O</div> %>
@@ -32,7 +32,7 @@
 
         <% @cards.each do | card | %>
 
-        <div class="hero-card p-3 mx-2 my-3 shadow">
+        <div class="hero-card p-3 mx-2 my-3">
             <center>
                 <img class="hero-img" src="<%="user_images/#{card.image}.png"%>" alt="hero-image">
                 <div class="hero-text">

@@ -14,20 +14,16 @@
  *= require_self
  */
 
+/* bootstrap hack=========================================================================================== */
+
 * {
     box-sizing: border-box;
 }
 
-/* bootstrap hack=========================================================================================== */
-
 .container {
-    margin-top: 7rem;
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: unset !important;
-    }
+    padding-top: 7rem;
+    max-width: unset !important;
+    width: 100%;
 }
 
 /* bootstrap hack=========================================================================================== */
@@ -40,6 +36,11 @@
 
 .josefinsans {
     font-family: 'josefinsans-regular';
+}
+
+.f3d {
+    font-family: '3dumbregular';
+    text-shadow: 0 3px 3px #ff0000;
 }
 
 .m-relative {
@@ -100,6 +101,10 @@ nav .navbar-brand {
     z-index: 10000;
     top: 0;
     display: none;
+    background: linear-gradient(45deg, rgb(237 236 236 / 50%), rgb(237 236 236 / 50%)), url('http://127.0.0.1:3000/user_images/capture.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #start .tes {
@@ -152,12 +157,22 @@ nav .navbar-brand {
 
 @font-face {
     font-family: 'josefinsans-bold';
-    src: url('https://heroes-77.herokuapp.com/fonts/josefinsans-bold.woff');
+    src: url('https://heroes-77.herokuapp.com/fonts/josefinsans-bold.woff'),
+        url('http://127.0.0.1:3000/fonts/josefinsans-bold.woff');
 }
 
 @font-face {
     font-family: 'josefinsans-regular';
-    src: url('https://heroes-77.herokuapp.com/fonts/josefinsans-regular.woff');
+    src: url('https://heroes-77.herokuapp.com/fonts/josefinsans-regular.woff')
+        url('http://127.0.0.1:3000/fonts/josefinsans-regular.woff');
+}
+
+@font-face {
+    font-family: '3dumbregular';
+    src: url('https://heroes-77.herokuapp.com/fonts/3dumb-webfont.woff') format('woff'),
+            url('http://127.0.0.1:3000/fonts/3dumb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @keyframes fadeup {
@@ -173,8 +188,18 @@ nav .navbar-brand {
 }
 
 @media (max-width: 567px) {
+
     .justify-6,
     .justify-5 {
         justify-content: center !important;
+    }
+
+    .m-container {
+        background: linear-gradient(45deg, rgb(237 236 236 / 50%), rgb(237 236 236 / 50%));
+    }
+
+    .about-skills .left-sides,
+    .about-skills .right-sides {
+        width: 100%;
     }
 }

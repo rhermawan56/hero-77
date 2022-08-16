@@ -2,6 +2,13 @@ body {
     background-color: whitesmoke;
 }
 
+.m-container {
+    background: linear-gradient(45deg, rgb(237 236 236 / 50%), rgb(237 236 236 / 50%)), url('http://127.0.0.1:3000/user_images/capture.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .f-index {
     position: absolute;
     width: 100%;
@@ -21,6 +28,7 @@ body {
     transition: .5s ease;
     min-height: 18.75rem;
     background-color: #a3a3a333;
+    box-shadow: 0 0 10px 3px #0000005c;
 }
 
 .hero-card img {
