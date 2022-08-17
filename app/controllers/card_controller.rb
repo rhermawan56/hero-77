@@ -19,10 +19,10 @@ class CardController < ApplicationController
         
         if @save.save
             flash[:notice] = "Terimakasih sudah menambah pengetahuan anda tentang #{@save.name}"
-            redirect_to('/')
+            redirect_to('/home')
         else 
             flash[:notice] = "Kartu Gagal di Tambahkan"
-            redirect_to('/')
+            redirect_to('/home')
         end
     end
 end

@@ -3,7 +3,8 @@ body {
 }
 
 .m-container {
-    background: linear-gradient(45deg, rgb(237 236 236 / 50%), rgb(237 236 236 / 50%)), url('https://heroes-77.herokuapp.com/user_images/capture.jpg');
+    /* background: linear-gradient(45deg, rgb(24 24 24 / 50%), rgb(24 24 24 / 50%)), url('http://127.0.0.1:3000/user_images/indonesia.webp'); */
+    background: linear-gradient(45deg, rgb(24 24 24 / 50%), rgb(24 24 24 / 50%)), url('https://heroes-77.herokuapp.com/user_images/indonesia.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,8 +28,8 @@ body {
     border-radius: 10px;
     transition: .5s ease;
     min-height: 18.75rem;
-    background-color: #a3a3a333;
-    box-shadow: 0 0 10px 3px #0000005c;
+    background-color: rgb(0 0 0 / 50%);
+    box-shadow: 0 0 10px 2px black;
 }
 
 .hero-card img {
@@ -62,12 +63,17 @@ body {
 }
 
 #show .show {
-    width: 80%;
+    width: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     animation: show 1s ease;
+}
+
+#show h6 {
+    line-height: 1.7;
+    text-align: justify !important;
 }
 
 #close-show {
@@ -77,10 +83,11 @@ body {
     top: 2rem;
     transition: 1s ease;
     cursor: pointer;
+    z-index: 100;
 }
 
 #close-show:hover {
-    transform: rotate3d(1, 1, 1, 360deg);
+    transform: translateY(-10px);
 }
 
 #image {

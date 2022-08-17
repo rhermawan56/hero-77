@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   post 'create', to: 'card#create'
   get '/', to: 'home#index'
+  get '/home', to: 'home#home'
   get '/about', to: 'about#index'
 end

@@ -29,6 +29,9 @@
 /* bootstrap hack=========================================================================================== */
 
 /* define class ============================================================================================ */
+.container-dark {
+    
+}
 
 .josefinsansBold {
     font-family: 'josefinsans-bold';
@@ -59,6 +62,14 @@
     justify-content: space-between;
 }
 
+.t-white {
+    color:whitesmoke
+}
+
+.t-shadow {
+    text-shadow: 0 3px 3px rgb(0 0 0 / 50%);
+}
+
 /* define class ============================================================================================ */
 
 p {
@@ -70,7 +81,7 @@ a {
 }
 
 header nav {
-    background: linear-gradient(0deg, rgb(255 255 255 / 50%), rgb(255 0 0 / 50%));
+    background-color: whitesmoke;
 }
 
 nav img {
@@ -100,24 +111,18 @@ nav .navbar-brand {
     position: fixed;
     z-index: 10000;
     top: 0;
-    display: none;
-    background: linear-gradient(45deg, rgb(237 236 236 / 50%), rgb(237 236 236 / 50%)), url('https://heroes-77.herokuapp.com/user_images/capture.jpg');
+    /* background: linear-gradient(45deg, rgb(24 24 24 / 50%), rgb(24 24 24 / 50%)), url('http://127.0.0.1:3000/user_images/indonesia.webp'); */
+    background: linear-gradient(45deg, rgb(24 24 24 / 50%), rgb(24 24 24 / 50%)), url('https://heroes-77.herokuapp.com/user_images/indonesia.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 #start .tes {
-    /* padding: 10px; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
-    /* background: linear-gradient(45deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url(https://heroes-77.herokuapp.com/user_images/merahputih.webp); */
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
-    /* background-size: cover; */
-    /* box-shadow: 0 0 10px 2px rgb(0 0 0 / 50%); */
     animation: fadeup 3s ease;
 }
 
@@ -125,30 +130,31 @@ nav .navbar-brand {
     right: 3rem;
     top: 1rem;
     cursor: pointer;
-    transition: 1s ease;
+    transition: .5s ease;
+    padding: .5rem;
+    z-index: 100;
 }
 
 #start-close:hover {
-    transform: rotate3d(1, 1, 1, 360deg);
+    transform: translateY(-10px);
 }
 
 #start img {
     width: 20rem;
 }
 
-#start .quotes {
-    /* color: white; */
-}
-
+#start-close,
+.quotes h6,
 .quotes h3 {
-    text-shadow: 3px 1px 6px #00000096;
+    text-shadow: 0 3px 3px #00000096;
+    color: white;
 }
 
 #notice,
 #notice_form {
     padding: .5rem;
-    background-color: antiquewhite;
-    border-radius: .5rem;
+    background-color: #dbdbdb;
+    border-radius: .2rem;
 }
 
 #notice_form {
@@ -157,20 +163,20 @@ nav .navbar-brand {
 
 @font-face {
     font-family: 'josefinsans-bold';
-    src: url('https://heroes-77.herokuapp.com/fonts/josefinsans-bold.woff'),
-        url('http://127.0.0.1:3000/fonts/josefinsans-bold.woff');
+    src: url('https://heroes-77.herokuapp.com/fonts/josefinsans-bold.woff');
+        /* url('http://127.0.0.1:3000/fonts/josefinsans-bold.woff'); */
 }
 
 @font-face {
     font-family: 'josefinsans-regular';
-    src: url('https://heroes-77.herokuapp.com/fonts/josefinsans-regular.woff')
-        url('http://127.0.0.1:3000/fonts/josefinsans-regular.woff');
+    src: url('https://heroes-77.herokuapp.com/fonts/josefinsans-regular.woff');
+            /* url('http://127.0.0.1:3000/fonts/josefinsans-regular.woff'); */
 }
 
 @font-face {
     font-family: '3dumbregular';
-    src: url('https://heroes-77.herokuapp.com/fonts/3dumb-webfont.woff') format('woff'),
-            url('http://127.0.0.1:3000/fonts/3dumb-webfont.woff') format('woff');
+    src: url('https://heroes-77.herokuapp.com/fonts/3dumb-webfont.woff') format('woff');
+        /* url('http://127.0.0.1:3000/fonts/3dumb-webfont.woff') format('woff'); */
     font-weight: normal;
     font-style: normal;
 }
@@ -196,10 +202,5 @@ nav .navbar-brand {
 
     .m-container {
         background: linear-gradient(45deg, rgb(237 236 236 / 50%), rgb(237 236 236 / 50%));
-    }
-
-    .about-skills .left-sides,
-    .about-skills .right-sides {
-        width: 100%;
     }
 }

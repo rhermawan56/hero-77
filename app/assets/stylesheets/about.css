@@ -1,36 +1,75 @@
-.about-img img {
+/* define ================================================================================================== */
+
+.container-dark {
+    background-color: rgb(15 15 18 / 80%);
+}
+
+.title-dark {
+    color: white !important;
+    text-shadow: 0 3px 3px #262a95 !important;
+}
+
+.card-dark {
+    background-color: rgb(179 177 177 / 50%);
+}
+
+/* define ================================================================================================== */
+
+/* css hack ================================================================================================= */
+.about-container .card-body {
+    height: 2.6rem;
+}
+
+/* css hack ================================================================================================= */
+
+.about-container {
+    padding-bottom: 20rem;
+}
+
+.contain-skills,
+.contain-about {
+    padding: 10px;
+    width: 100% !important;
+}
+
+.contain-about img {
     margin-left: 50%;
 }
 
-.about-img .about-img-bg {
-    height: 20rem;
+.contain-about .bg-img {
+    height: 15rem;
     background-color: black;
     top: 0;
     left: 50%;
     z-index: -1;
-    box-shadow: 0 0 10px 2px rgb(0 0 0 / 50%);
 }
 
-.about-img .about-img-bg,
-.about-img img {
-    width: 20rem;
+.contain-about img,
+.contain-about .bg-img {
     border-radius: 50%;
+    width: 15rem;
     transform: translateX(-50%);
 }
 
+.contain-skills img {
+    width: 2rem;
+}
 
-.about-skills .left-sides,
-.about-skills .right-sides {
+.contain-skills .in-contain {
     width: 50%;
 }
 
-.about-skills,
-.about-skills .left-sides,
-.about-skills .right-sides {
-    padding: 10px;
-}
+@media (max-width: 567px) {
+    .contain-about img {
+        width: 10rem;
+    }
 
-.left-sides img,
-.right-sides img {
-    width: 2rem;
+    .contain-about .bg-img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .contain-skills .in-contain {
+        width: 100%;
+    }
 }

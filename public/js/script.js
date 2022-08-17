@@ -1,6 +1,5 @@
 $('#start .start-close').click(function () {
-    $('#start').hide()
-    $(location).attr('href', '#home')
+    $(location).attr('href', 'http://127.0.0.1:3000/home')
 })
 
 let heroIndex = null
@@ -69,6 +68,20 @@ $('#content_form').keypress(function () {
 //     $('body').css('background-color','black')
 // })
 
-$(function () {
-    $('#start').show()
+$('#dark').click(function () {
+    let mode = $(this).html()
+    if (mode == 'Dark') {
+        mode = 'Light'
+        $(this).html(mode)
+    } else {
+        mode = 'Dark'
+        $(this).html(mode)
+    }
+
+    $('.about-container').toggleClass('container-dark')
+    $('.about-container .f3d').toggleClass('title-dark')
+    $('.contain-about h3').toggleClass('title-dark')
+    $('.contain-about p').toggleClass('title-dark')
+    $('.contain-skills h3').toggleClass('title-dark')
+    $('.about-container .card-body').toggleClass('card-dark')
 })

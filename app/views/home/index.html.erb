@@ -1,63 +1,10 @@
 <div id="start">
     <h3 id="start-close" class="absolute start-close">x</h3>
     <div class="absolute tes text-center">
-        <img src="<%="user_images/Ir.soekarno.jpg"%>" alt="">
+        <img src="<%="user_images/soekarno.webp"%>" alt="">
         <div class="quotes josefinsansBold">
             <h3 class="mt-2">Bangsa yang besar adalah bangsa yang menghargai jasa pahlawannya</h3>
             <h6>~ Ir. Soekarno ~</h6>
         </div>
-    </div>
-</div>
-
-<div class="container m-relative m-container">
-    <h3 class="josefinsansBold" id="home">Pahlawan Republik Indonesia</h3>
-
-    <%# <div id="mode" class="m-absolute" style="cursor:pointer">O</div> %>
-    
-    <% if flash[:notice] %>
-
-        <div id="notice" class="my-3 shadow"><%= flash[:notice] %></div>
-    
-    <% end %>
-    
-    <hr>
-
-    <% if @count > 5 %>
-        <% @class = "justify-6" %>
-    <% else %>
-        <% @class = "justify-5" %>
-    <% end %>
-
-    <div class="d-flex p-3 <%= @class %> flex-wrap in-container">
-
-        <% @cards.each do | card | %>
-
-        <div class="hero-card p-3 mx-2 my-3">
-            <center>
-                <img class="hero-img" src="<%="user_images/#{card.image}.png"%>" alt="hero-image">
-                <div class="hero-text">
-                    <h5 class="mt-2 mb-0 josefinsansBold"><%="#{card.name}"%></h5>
-                    <p class="m-0 josefinsans"><%="#{card.born}"%></p>
-                    <hr>
-                </div>
-            </center>
-            <p class="content m-0" hidden>
-                <%= card.content %>
-            </p>
-            <div class="f-index"></div>
-        </div>
-        
-        <% end %>
-
-    </div>
-</div>
-
-<div id="show" style="display: none">
-    <h3 id="close-show">x</h3>
-    <div class="show p-2">
-        <img id="image" src="" alt="">
-        <center>
-        <h6 id="content" class="m-3" style="color:white"></h6>
-        </center>
     </div>
 </div>
