@@ -1,5 +1,5 @@
 $('#start .start-close').click(function () {
-    $(location).attr('href', 'http://127.0.0.1:3000/home')
+    $(location).attr('href', 'https://heroes-77.herokuapp.com/home')
 })
 
 let heroIndex = null
